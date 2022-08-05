@@ -1,20 +1,16 @@
 PODS:
   - SwiftyJSON (5.0.1)
-  - Zip (2.1.2)
 
 DEPENDENCIES:
   - SwiftyJSON
-  - Zip
 
 SPEC REPOS:
   trunk:
     - SwiftyJSON
-    - Zip
 
 SPEC CHECKSUMS:
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
-  Zip: b3fef584b147b6e582b2256a9815c897d60ddc67
 
-PODFILE CHECKSUM: 0e6d720cb9c226efe9a1e5c8a22f4ba27dbe35c5
+PODFILE CHECKSUM: aece2980b2739dbfd733c6084d1e622b144faa6d
 
 COCOAPODS: 1.11.3

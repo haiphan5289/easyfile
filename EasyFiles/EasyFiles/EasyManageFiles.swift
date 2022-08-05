@@ -9,7 +9,6 @@ import Foundation
 import AVFoundation
 import CoreLocation
 import UIKit
-import Zip
 
 public protocol ManageAppDelegate: AnyObject {
     func pinHomes(pins: [FolderModel])
@@ -17,6 +16,7 @@ public protocol ManageAppDelegate: AnyObject {
     func callAgain()
     func updateOrInsertConfig(folder: FolderModel)
     func deleteFolder(folder: FolderModel)
+    func zip(sourceURL: [URL], nameZip: String)
 }
 
 public struct FolderModel: Codable {
@@ -927,57 +927,58 @@ public class ManageApp {
     }
     
     //MARK: ZIP ITEMS
-    public func unZipItems(sourceURL: URL, folderName: String, folders: [String], failure: (String) -> Void?) {
-        var listName: [String] = []
-        let destination = self.createURL(folder: folderName, name: "/")
-        do {
-            _ = try Zip.unzipFile(sourceURL, destination: destination, overwrite: true, password: nil, progress: nil, fileOutputHandler: { unzippedFile in
-                let name = self.getNameFolderToCompress(url: unzippedFile)
-                
-                listName.append(name)
-            })
-            if let index = listName.firstIndex(where: { $0.uppercased().contains("__MACOSX".uppercased()) }) {
-                self.removeFolder(name: listName[index])
-                listName.remove(at: index)
-            }
-            if let last = listName.last {
-                var removeText = last
-                if last.count > 0 {
-                    removeText.removeLast()
-                } else {
-                    self.delegate?.callAgain()
-                    return
-                }
-                
-                var isFolderExist: Bool = false
-                
-                folders.forEach { text in
-                    if text.uppercased() == removeText.uppercased() {
-                        isFolderExist = true
-                    }
-                }
-                
-                if !isFolderExist {
-                    let folder = FolderModel(imgName: "ic_other_folder",
-                                             url: self.createURL(folder: "", name: last),
-                                             id: Date().convertDateToLocalTime().timeIntervalSince1970)
-//                    RealmManager.shared.updateOrInsertConfig(model: folder)
-                  self.delegate?.updateOrInsertConfig(folder: folder)
-                }
-            }
-        }
-        catch {
-          failure("Folder is empty")
-        }
-    }
+//    public func unZipItems(sourceURL: URL, folderName: String, folders: [String], failure: (String) -> Void?) {
+//        var listName: [String] = []
+//        let destination = self.createURL(folder: folderName, name: "/")
+//        do {
+//            _ = try Zip.unzipFile(sourceURL, destination: destination, overwrite: true, password: nil, progress: nil, fileOutputHandler: { unzippedFile in
+//                let name = self.getNameFolderToCompress(url: unzippedFile)
+//                
+//                listName.append(name)
+//            })
+//            if let index = listName.firstIndex(where: { $0.uppercased().contains("__MACOSX".uppercased()) }) {
+//                self.removeFolder(name: listName[index])
+//                listName.remove(at: index)
+//            }
+//            if let last = listName.last {
+//                var removeText = last
+//                if last.count > 0 {
+//                    removeText.removeLast()
+//                } else {
+//                    self.delegate?.callAgain()
+//                    return
+//                }
+//                
+//                var isFolderExist: Bool = false
+//                
+//                folders.forEach { text in
+//                    if text.uppercased() == removeText.uppercased() {
+//                        isFolderExist = true
+//                    }
+//                }
+//                
+//                if !isFolderExist {
+//                    let folder = FolderModel(imgName: "ic_other_folder",
+//                                             url: self.createURL(folder: "", name: last),
+//                                             id: Date().convertDateToLocalTime().timeIntervalSince1970)
+////                    RealmManager.shared.updateOrInsertConfig(model: folder)
+//                  self.delegate?.updateOrInsertConfig(folder: folder)
+//                }
+//            }
+//        }
+//        catch {
+//          failure("Folder is empty")
+//        }
+//    }
     
     public func zipItems(sourceURL: [URL], nameZip: String) {
-        do {
-            _ = try Zip.quickZipFiles(sourceURL, fileName: nameZip) // Zip
-        }
-        catch {
-          print("Something went wrong")
-        }
+      self.delegate?.zip(sourceURL: sourceURL, nameZip: nameZip)
+//        do {
+//            _ = try Zip.quickZipFiles(sourceURL, fileName: nameZip) // Zip
+//        }
+//        catch {
+//          print("Something went wrong")
+//        }
     }
     
     //MARK: REMOVE FILES
