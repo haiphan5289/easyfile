@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   spec.license      = "MIT"
   spec.author             = { "haiphan5289" => "haiphan5289@gmail.com" }
   spec.platform     = :ios, "13.0"
-  spec.source       = { :git => "https://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@github.com/haiphan5289/easyfile.git", :tag => spec.version.to_s }
+  spec.source       = { :git => "https://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@github.com/haiphan5289/easyfile.git", :tag => spec.version.to_s }
 
   spec.source_files  = "EasyFiles/**/*.{swift}"
   spec.swift_version = "5.0"
