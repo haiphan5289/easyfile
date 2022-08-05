@@ -10,7 +10,7 @@ import Foundation
 public struct EasyFileManage {
   
   public static func sayHello() {
-    print("======== sayHello")
+    print("======== sayHello=====")
   }
   
 }
