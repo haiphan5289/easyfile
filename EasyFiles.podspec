@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "EasyFiles"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "A short description of EasyFiles."
   spec.description  = "A short description of EasyFiles."
   spec.homepage     = "https://github.com/haiphan5289/easyfile.git"
