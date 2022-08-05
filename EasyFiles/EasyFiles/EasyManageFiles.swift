@@ -310,7 +310,8 @@ public class ManageApp {
         let folder = FolderModel(imgName: imgName,
                                  url: url,
                                  id: Date().convertDateToLocalTime().timeIntervalSince1970)
-        RealmManager.shared.updateOrInsertConfig(model: folder)
+//        RealmManager.shared.updateOrInsertConfig(model: folder)
+      self.delegate?.updateOrInsertConfig(folder: folder)
     }
     
     public func addPinFolder(folder: FolderModel) {
@@ -847,7 +848,8 @@ public class ManageApp {
                 }
                 if outputURL.hasDirectoryPath {
                     let folderModel = FolderModel(imgName: "ic_other_folder", url: outputURL, id: Double(Date().convertDateToLocalTime().timeIntervalSince1970))
-                    RealmManager.shared.updateOrInsertConfig(model: folderModel)
+//                    RealmManager.shared.updateOrInsertConfig(model: folderModel)
+                  self.delegate?.updateOrInsertConfig(folder: folderModel)
                 }
             } catch {
                 failure?(error.localizedDescription)
@@ -959,7 +961,8 @@ public class ManageApp {
                     let folder = FolderModel(imgName: "ic_other_folder",
                                              url: self.createURL(folder: "", name: last),
                                              id: Date().convertDateToLocalTime().timeIntervalSince1970)
-                    RealmManager.shared.updateOrInsertConfig(model: folder)
+//                    RealmManager.shared.updateOrInsertConfig(model: folder)
+                  self.delegate?.updateOrInsertConfig(folder: folder)
                 }
             }
         }
@@ -1021,11 +1024,13 @@ public class ManageApp {
                         try? fileManager.removeItem(at: contents[index])
                     }
                     self.deletePinHome(url: url)
-                    if url.hasDirectoryPath, let index = ManageApp.shared.folders.firstIndex(where: { $0.url.getNamePath().uppercased().contains(url.getNamePath().uppercased())}) {
-                        RealmManager.shared.deleteFolder(model: ManageApp.shared.folders[index])
+                    if url.hasDirectoryPath, let index = self.folders.firstIndex(where: { $0.url.getNamePath().uppercased().contains(url.getNamePath().uppercased())}) {
+//                        RealmManager.shared.deleteFolder(model: ManageApp.shared.folders[index])
+                      self.delegate?.deleteFolder(folder: self.folders[index])
                     }
                     if url.hasDirectoryPath, let index = ManageApp.shared.folders.firstIndex(where: { $0.url.getNamePathPlus().uppercased().contains(url.getNamePath().uppercased())}) {
-                        RealmManager.shared.deleteFolder(model: ManageApp.shared.folders[index])
+//                        RealmManager.shared.deleteFolder(model: ManageApp.shared.folders[index])
+                      self.delegate?.deleteFolder(folder: self.folders[index])
                     }
                 }
             }
@@ -1077,8 +1082,9 @@ public class ManageApp {
         
         do {
             try fileManager.removeItem(at: pdfPath)
-            if let index = ManageApp.shared.folders.firstIndex(where: { $0.url.getNamePath().uppercased().contains(pdfPath.getNamePath().uppercased()) }) {
-                RealmManager.shared.deleteFolder(model: ManageApp.shared.folders[index])
+            if let index = self.folders.firstIndex(where: { $0.url.getNamePath().uppercased().contains(pdfPath.getNamePath().uppercased()) }) {
+//                RealmManager.shared.deleteFolder(model: ManageApp.shared.folders[index])
+              self.delegate?.deleteFolder(folder: self.folders[index])
             }
             self.deletePinHome(url: pdfPath)
         } catch let err {
@@ -1155,11 +1161,13 @@ public class ManageApp {
                 try FileManager.default.copyItem(at: srcURL, to: dstURL)
                 if srcURL.hasDirectoryPath {
                     let folder = FolderModel(imgName: "ic_other_folder", url: dstURL, id: Double(Date().convertDateToLocalTime().timeIntervalSince1970))
-                    RealmManager.shared.updateOrInsertConfig(model: folder)
+//                    RealmManager.shared.updateOrInsertConfig(model: folder)
+                  self.delegate?.updateOrInsertConfig(folder: folder)
                 }
                 try FileManager.default.removeItem(at: srcURL)
                 if srcURL.hasDirectoryPath, let index = ManageApp.shared.folders.firstIndex(where: { $0.url.getNamePath().uppercased().contains(srcURL.getNamePath().uppercased())}) {
-                    RealmManager.shared.deleteFolder(model: ManageApp.shared.folders[index])
+//                    RealmManager.shared.deleteFolder(model: ManageApp.shared.folders[index])
+                  self.delegate?.deleteFolder(folder: self.folders[index])
                 }
             } catch (let error) {
                 e = error
@@ -1197,11 +1205,13 @@ public class ManageApp {
                 try FileManager.default.copyItem(at: srcURL, to: dstURL)
                 if srcURL.hasDirectoryPath {
                     let folder = FolderModel(imgName: "ic_other_folder", url: dstURL, id: Double(Date().convertDateToLocalTime().timeIntervalSince1970))
-                    RealmManager.shared.updateOrInsertConfig(model: folder)
+//                    RealmManager.shared.updateOrInsertConfig(model: folder)
+                  self.delegate?.updateOrInsertConfig(folder: folder)
                 }
                 try FileManager.default.removeItem(at: srcURL)
-                if srcURL.hasDirectoryPath, let index = ManageApp.shared.folders.firstIndex(where: { $0.url.getNamePath().uppercased().contains(srcURL.getNamePath().uppercased())}) {
-                    RealmManager.shared.deleteFolder(model: ManageApp.shared.folders[index])
+                if srcURL.hasDirectoryPath, let index = self.folders.firstIndex(where: { $0.url.getNamePath().uppercased().contains(srcURL.getNamePath().uppercased())}) {
+//                    RealmManager.shared.deleteFolder(model: ManageApp.shared.folders[index])
+                  self.delegate?.deleteFolder(folder: self.folders[index])
                 }
             } catch (let error) {
                 e = error
@@ -1245,7 +1255,8 @@ public class ManageApp {
                     try FileManager.default.copyItem(at: srcURL, to: dstURL)
                     if srcURL.hasDirectoryPath {
                         let folder = FolderModel(imgName: "ic_other_folder", url: dstURL, id: Double(Date().convertDateToLocalTime().timeIntervalSince1970))
-                        RealmManager.shared.updateOrInsertConfig(model: folder)
+//                        RealmManager.shared.updateOrInsertConfig(model: folder)
+                      self.delegate?.updateOrInsertConfig(folder: folder)
                     }
                 } catch (let error) {
                    e = error

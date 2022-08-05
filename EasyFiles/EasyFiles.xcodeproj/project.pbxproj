@@ -15,9 +15,7 @@
 		3EBAF444289D0C0F00C59679 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF442289D0C0F00C59679 /* Date+Extension.swift */; };
 		3EBAF447289D0C1700C59679 /* NumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF445289D0C1700C59679 /* NumberExtension.swift */; };
 		3EBAF448289D0C1700C59679 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF446289D0C1700C59679 /* StringExtension.swift */; };
-		3EBAF44D289D0C2100C59679 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF449289D0C2000C59679 /* RealmManager.swift */; };
 		3EBAF44E289D0C2100C59679 /* EasyManageFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF44A289D0C2000C59679 /* EasyManageFiles.swift */; };
-		3EBAF44F289D0C2100C59679 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF44B289D0C2000C59679 /* RealmModel.swift */; };
 		3EBAF450289D0C2100C59679 /* Encode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF44C289D0C2000C59679 /* Encode+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,9 +28,7 @@
 		3EBAF442289D0C0F00C59679 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		3EBAF445289D0C1700C59679 /* NumberExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberExtension.swift; sourceTree = "<group>"; };
 		3EBAF446289D0C1700C59679 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		3EBAF449289D0C2000C59679 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		3EBAF44A289D0C2000C59679 /* EasyManageFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyManageFiles.swift; sourceTree = "<group>"; };
-		3EBAF44B289D0C2000C59679 /* RealmModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
 		3EBAF44C289D0C2000C59679 /* Encode+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encode+Extension.swift"; sourceTree = "<group>"; };
 		642D10882B8B9F21C7B799E4 /* Pods-EasyFiles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyFiles.debug.xcconfig"; path = "Target Support Files/Pods-EasyFiles/Pods-EasyFiles.debug.xcconfig"; sourceTree = "<group>"; };
 		80490C308F93407E89D910ED /* Pods-EasyFiles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyFiles.release.xcconfig"; path = "Target Support Files/Pods-EasyFiles/Pods-EasyFiles.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,8 +86,6 @@
 				3EBAF446289D0C1700C59679 /* StringExtension.swift */,
 				3EBAF44A289D0C2000C59679 /* EasyManageFiles.swift */,
 				3EBAF44C289D0C2000C59679 /* Encode+Extension.swift */,
-				3EBAF449289D0C2000C59679 /* RealmManager.swift */,
-				3EBAF44B289D0C2000C59679 /* RealmModel.swift */,
 			);
 			path = EasyFiles;
 			sourceTree = "<group>";
@@ -214,9 +208,7 @@
 				3EBAF444289D0C0F00C59679 /* Date+Extension.swift in Sources */,
 				3EBAF448289D0C1700C59679 /* StringExtension.swift in Sources */,
 				3EBAF440289D0C0700C59679 /* SongExporter.swift in Sources */,
-				3EBAF44F289D0C2100C59679 /* RealmModel.swift in Sources */,
 				3EBAF443289D0C0F00C59679 /* URL+Extension.swift in Sources */,
-				3EBAF44D289D0C2100C59679 /* RealmManager.swift in Sources */,
 				3EBAF450289D0C2100C59679 /* Encode+Extension.swift in Sources */,
 				3EBAF44E289D0C2100C59679 /* EasyManageFiles.swift in Sources */,
 				3EBAF447289D0C1700C59679 /* NumberExtension.swift in Sources */,
