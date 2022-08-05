@@ -7,14 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22C4F7E018AE9840754A029C /* Pods_EasyFiles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1795C682AD7B46DCACE77A0 /* Pods_EasyFiles.framework */; };
 		3EBAF3F7289CF2C100C59679 /* EasyFiles.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EBAF3F6289CF2C100C59679 /* EasyFiles.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3EBAF3FE289CF2F300C59679 /* EasyFileManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF3FD289CF2F300C59679 /* EasyFileManage.swift */; };
+		3EBAF42E289CFF4400C59679 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF42D289CFF4400C59679 /* URL+Extension.swift */; };
+		3EBAF430289CFF6300C59679 /* NumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF42F289CFF6300C59679 /* NumberExtension.swift */; };
+		3EBAF432289CFF7600C59679 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF431289CFF7600C59679 /* StringExtension.swift */; };
+		3EBAF434289CFF9C00C59679 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF433289CFF9C00C59679 /* Date+Extension.swift */; };
+		3EBAF438289CFFE800C59679 /* EasyManageFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF435289CFFE800C59679 /* EasyManageFiles.swift */; };
+		3EBAF439289CFFE800C59679 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF436289CFFE800C59679 /* RealmManager.swift */; };
+		3EBAF43A289CFFE800C59679 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF437289CFFE800C59679 /* RealmModel.swift */; };
+		3EBAF43C289D001500C59679 /* Encode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF43B289D001500C59679 /* Encode+Extension.swift */; };
+		3EBAF43E289D003F00C59679 /* SongExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF43D289D003F00C59679 /* SongExporter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3EBAF3F3289CF2C100C59679 /* EasyFiles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyFiles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EBAF3F6289CF2C100C59679 /* EasyFiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyFiles.h; sourceTree = "<group>"; };
-		3EBAF3FD289CF2F300C59679 /* EasyFileManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyFileManage.swift; sourceTree = "<group>"; };
+		3EBAF42D289CFF4400C59679 /* URL+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		3EBAF42F289CFF6300C59679 /* NumberExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberExtension.swift; sourceTree = "<group>"; };
+		3EBAF431289CFF7600C59679 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		3EBAF433289CFF9C00C59679 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		3EBAF435289CFFE800C59679 /* EasyManageFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyManageFiles.swift; sourceTree = "<group>"; };
+		3EBAF436289CFFE800C59679 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		3EBAF437289CFFE800C59679 /* RealmModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		3EBAF43B289D001500C59679 /* Encode+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encode+Extension.swift"; sourceTree = "<group>"; };
+		3EBAF43D289D003F00C59679 /* SongExporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongExporter.swift; sourceTree = "<group>"; };
+		C1795C682AD7B46DCACE77A0 /* Pods_EasyFiles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyFiles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D7EB9C4AE665C7FC6B2ADA /* Pods-EasyFiles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyFiles.release.xcconfig"; path = "Target Support Files/Pods-EasyFiles/Pods-EasyFiles.release.xcconfig"; sourceTree = "<group>"; };
+		FA54FF9C6CA6146FEF91A895 /* Pods-EasyFiles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyFiles.debug.xcconfig"; path = "Target Support Files/Pods-EasyFiles/Pods-EasyFiles.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C4F7E018AE9840754A029C /* Pods_EasyFiles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +55,7 @@
 				3EBAF3F5289CF2C100C59679 /* EasyFiles */,
 				3EBAF3F4289CF2C100C59679 /* Products */,
 				3EBAF41F289CF3A000C59679 /* Frameworks */,
+				A1DD11F7832C6202BF8017D0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,7 +71,15 @@
 			isa = PBXGroup;
 			children = (
 				3EBAF3F6289CF2C100C59679 /* EasyFiles.h */,
-				3EBAF3FD289CF2F300C59679 /* EasyFileManage.swift */,
+				3EBAF435289CFFE800C59679 /* EasyManageFiles.swift */,
+				3EBAF436289CFFE800C59679 /* RealmManager.swift */,
+				3EBAF437289CFFE800C59679 /* RealmModel.swift */,
+				3EBAF43D289D003F00C59679 /* SongExporter.swift */,
+				3EBAF42D289CFF4400C59679 /* URL+Extension.swift */,
+				3EBAF42F289CFF6300C59679 /* NumberExtension.swift */,
+				3EBAF431289CFF7600C59679 /* StringExtension.swift */,
+				3EBAF433289CFF9C00C59679 /* Date+Extension.swift */,
+				3EBAF43B289D001500C59679 /* Encode+Extension.swift */,
 			);
 			path = EasyFiles;
 			sourceTree = "<group>";
@@ -57,8 +87,18 @@
 		3EBAF41F289CF3A000C59679 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1795C682AD7B46DCACE77A0 /* Pods_EasyFiles.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1DD11F7832C6202BF8017D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA54FF9C6CA6146FEF91A895 /* Pods-EasyFiles.debug.xcconfig */,
+				F6D7EB9C4AE665C7FC6B2ADA /* Pods-EasyFiles.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,6 +119,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EBAF3FA289CF2C100C59679 /* Build configuration list for PBXNativeTarget "EasyFiles" */;
 			buildPhases = (
+				A00D1FC7668FACC327BBDB5C /* [CP] Check Pods Manifest.lock */,
 				3EBAF3EE289CF2C100C59679 /* Headers */,
 				3EBAF3EF289CF2C100C59679 /* Sources */,
 				3EBAF3F0289CF2C100C59679 /* Frameworks */,
@@ -136,12 +177,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A00D1FC7668FACC327BBDB5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyFiles-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3EBAF3EF289CF2C100C59679 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EBAF3FE289CF2F300C59679 /* EasyFileManage.swift in Sources */,
+				3EBAF434289CFF9C00C59679 /* Date+Extension.swift in Sources */,
+				3EBAF432289CFF7600C59679 /* StringExtension.swift in Sources */,
+				3EBAF438289CFFE800C59679 /* EasyManageFiles.swift in Sources */,
+				3EBAF43E289D003F00C59679 /* SongExporter.swift in Sources */,
+				3EBAF42E289CFF4400C59679 /* URL+Extension.swift in Sources */,
+				3EBAF43A289CFFE800C59679 /* RealmModel.swift in Sources */,
+				3EBAF439289CFFE800C59679 /* RealmManager.swift in Sources */,
+				3EBAF430289CFF6300C59679 /* NumberExtension.swift in Sources */,
+				3EBAF43C289D001500C59679 /* Encode+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +344,7 @@
 		};
 		3EBAF3FB289CF2C100C59679 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA54FF9C6CA6146FEF91A895 /* Pods-EasyFiles.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +376,7 @@
 		};
 		3EBAF3FC289CF2C100C59679 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6D7EB9C4AE665C7FC6B2ADA /* Pods-EasyFiles.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
