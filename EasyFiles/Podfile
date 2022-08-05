@@ -6,7 +6,7 @@ target 'EasyFiles' do
   use_frameworks!
 
 pod 'Zip'
-pod 'Realm', '~> 4.3.2'
+pod 'RealmSwift', '~> 4.3.2'
 pod 'SwiftyJSON'
 
   # Pods for EasyFiles

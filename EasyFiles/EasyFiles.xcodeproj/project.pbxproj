@@ -10,12 +10,30 @@
 		2637346E72BA76DD0C8A14D6 /* Pods_EasyFiles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 898FAB055E5C256241ED7A13 /* Pods_EasyFiles.framework */; };
 		3EBAF3F7289CF2C100C59679 /* EasyFiles.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EBAF3F6289CF2C100C59679 /* EasyFiles.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3EBAF3FE289CF2F300C59679 /* EasyFileManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF3FD289CF2F300C59679 /* EasyFileManage.swift */; };
+		3EBAF440289D0C0700C59679 /* SongExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF43F289D0C0700C59679 /* SongExporter.swift */; };
+		3EBAF443289D0C0F00C59679 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF441289D0C0F00C59679 /* URL+Extension.swift */; };
+		3EBAF444289D0C0F00C59679 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF442289D0C0F00C59679 /* Date+Extension.swift */; };
+		3EBAF447289D0C1700C59679 /* NumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF445289D0C1700C59679 /* NumberExtension.swift */; };
+		3EBAF448289D0C1700C59679 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF446289D0C1700C59679 /* StringExtension.swift */; };
+		3EBAF44D289D0C2100C59679 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF449289D0C2000C59679 /* RealmManager.swift */; };
+		3EBAF44E289D0C2100C59679 /* EasyManageFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF44A289D0C2000C59679 /* EasyManageFiles.swift */; };
+		3EBAF44F289D0C2100C59679 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF44B289D0C2000C59679 /* RealmModel.swift */; };
+		3EBAF450289D0C2100C59679 /* Encode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBAF44C289D0C2000C59679 /* Encode+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3EBAF3F3289CF2C100C59679 /* EasyFiles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyFiles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EBAF3F6289CF2C100C59679 /* EasyFiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyFiles.h; sourceTree = "<group>"; };
 		3EBAF3FD289CF2F300C59679 /* EasyFileManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyFileManage.swift; sourceTree = "<group>"; };
+		3EBAF43F289D0C0700C59679 /* SongExporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongExporter.swift; sourceTree = "<group>"; };
+		3EBAF441289D0C0F00C59679 /* URL+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		3EBAF442289D0C0F00C59679 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		3EBAF445289D0C1700C59679 /* NumberExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberExtension.swift; sourceTree = "<group>"; };
+		3EBAF446289D0C1700C59679 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		3EBAF449289D0C2000C59679 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		3EBAF44A289D0C2000C59679 /* EasyManageFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyManageFiles.swift; sourceTree = "<group>"; };
+		3EBAF44B289D0C2000C59679 /* RealmModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		3EBAF44C289D0C2000C59679 /* Encode+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encode+Extension.swift"; sourceTree = "<group>"; };
 		642D10882B8B9F21C7B799E4 /* Pods-EasyFiles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyFiles.debug.xcconfig"; path = "Target Support Files/Pods-EasyFiles/Pods-EasyFiles.debug.xcconfig"; sourceTree = "<group>"; };
 		80490C308F93407E89D910ED /* Pods-EasyFiles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyFiles.release.xcconfig"; path = "Target Support Files/Pods-EasyFiles/Pods-EasyFiles.release.xcconfig"; sourceTree = "<group>"; };
 		898FAB055E5C256241ED7A13 /* Pods_EasyFiles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyFiles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,7 +57,6 @@
 				642D10882B8B9F21C7B799E4 /* Pods-EasyFiles.debug.xcconfig */,
 				80490C308F93407E89D910ED /* Pods-EasyFiles.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -66,6 +83,15 @@
 			children = (
 				3EBAF3F6289CF2C100C59679 /* EasyFiles.h */,
 				3EBAF3FD289CF2F300C59679 /* EasyFileManage.swift */,
+				3EBAF43F289D0C0700C59679 /* SongExporter.swift */,
+				3EBAF442289D0C0F00C59679 /* Date+Extension.swift */,
+				3EBAF441289D0C0F00C59679 /* URL+Extension.swift */,
+				3EBAF445289D0C1700C59679 /* NumberExtension.swift */,
+				3EBAF446289D0C1700C59679 /* StringExtension.swift */,
+				3EBAF44A289D0C2000C59679 /* EasyManageFiles.swift */,
+				3EBAF44C289D0C2000C59679 /* Encode+Extension.swift */,
+				3EBAF449289D0C2000C59679 /* RealmManager.swift */,
+				3EBAF44B289D0C2000C59679 /* RealmModel.swift */,
 			);
 			path = EasyFiles;
 			sourceTree = "<group>";
@@ -185,6 +211,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EBAF3FE289CF2F300C59679 /* EasyFileManage.swift in Sources */,
+				3EBAF444289D0C0F00C59679 /* Date+Extension.swift in Sources */,
+				3EBAF448289D0C1700C59679 /* StringExtension.swift in Sources */,
+				3EBAF440289D0C0700C59679 /* SongExporter.swift in Sources */,
+				3EBAF44F289D0C2100C59679 /* RealmModel.swift in Sources */,
+				3EBAF443289D0C0F00C59679 /* URL+Extension.swift in Sources */,
+				3EBAF44D289D0C2100C59679 /* RealmManager.swift in Sources */,
+				3EBAF450289D0C2100C59679 /* Encode+Extension.swift in Sources */,
+				3EBAF44E289D0C2100C59679 /* EasyManageFiles.swift in Sources */,
+				3EBAF447289D0C1700C59679 /* NumberExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
